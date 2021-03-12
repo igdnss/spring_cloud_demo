@@ -1,0 +1,7 @@
+server:
+  port: 9002 #端口
+spring:
+  favicon:
+    enabled: false
+  application:
+    name: service-order #服务名称

@@ -1,0 +1,26 @@
+server:
+  port: 9001 #端口
+spring:
+  favicon:
+    enabled: false
+  application:
+    name: service-product #服务名称
+  datasource:
+    username: root
+    password: China123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud?useUnicode=true&characterEncoding=UTF-8
+  jpa:
+    database: MySQL
+    show-sql: true
+    open-in-view: true
+  #配置eureka server
+  eureka:
+    client:
+      register-with-eureka: true
+      fetch-registry: false
+      service-url:
+      #eureka_service配置文件中的defaultZone
+        defaultZone: http://localhost:9005/eureka/
+    instance:
+      prefer-ip-address: true#使用ip地址进行注册
