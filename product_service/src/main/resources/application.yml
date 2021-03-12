@@ -15,12 +15,12 @@ spring:
     show-sql: true
     open-in-view: true
   #配置eureka server
-  eureka:
-    client:
-      register-with-eureka: true
-      fetch-registry: false
-      service-url:
-      #eureka_service配置文件中的defaultZone
-        defaultZone: http://localhost:9005/eureka/
-    instance:
-      prefer-ip-address: true#使用ip地址进行注册
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+    #eureka_service配置文件中的defaultZone
+      defaultZone: http://user:pwd@localhost:9005/eureka/
+  instance:
+    prefer-ip-address: true #使用ip地址进行注册
