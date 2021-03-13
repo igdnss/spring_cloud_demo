@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 /**
  * @author ：TS六道轮回
  * @date ：Created in 2021/3/9 21:57
- * @description：${description}
  */
 public class Product {
     private Long id;
