@@ -21,6 +21,6 @@ eureka:
     fetch-registry: false
     service-url:
     #eureka_service配置文件中的defaultZone
-      defaultZone: http://user:pwd@localhost:9005/eureka/
+      defaultZone: http://localhost:9005/eureka/
   instance:
     prefer-ip-address: true #使用ip地址进行注册
