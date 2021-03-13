@@ -8,7 +8,6 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 /**
  * @author ：TS六道轮回
  * @date ：Created in 2021/3/10 21:27
- * @description：${description}
  */
 @SpringBootApplication
 //激活EurekaServer
