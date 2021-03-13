@@ -1,0 +1,10 @@
+server:
+  port: 9006 #端口
+spring:
+  application:
+    name: service-register-1 #服务名称
+# 配置eureka server
+eureka:
+  client:
+    service-url: #将自己注册到9005对就的注册中心上
+      defaultZone: http://127.0.0.1:9005/eureka/

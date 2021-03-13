@@ -4,6 +4,7 @@ eureka_service/*.iml
 order_service/*.iml
 order_service/target/
 product_service/target/
+eureka_service_1/target/
 product_service/*.iml
 ### STS ###
 .apt_generated

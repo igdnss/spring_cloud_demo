@@ -12,6 +12,7 @@
         <module>product_service</module>
         <module>order_service</module>
         <module>eureka_service</module>
+        <module>eureka_service_1</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

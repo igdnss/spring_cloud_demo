@@ -20,7 +20,10 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-    #eureka_service配置文件中的defaultZone
-      defaultZone: http://localhost:9005/eureka/
+    #注册到两个eureka上
+      defaultZone: http://localhost:9005/eureka/,http://localhost:9006/eureka/
   instance:
     prefer-ip-address: true #使用ip地址进行注册
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} # 向注册中心中注册服务id
+    lease-renewal-interval-in-seconds: 5 #每5秒发送一次心跳
+    lease-expiration-duration-in-seconds: 10 #10秒内没有心跳，则踢除服务

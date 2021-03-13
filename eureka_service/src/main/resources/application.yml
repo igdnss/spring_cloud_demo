@@ -1,11 +1,12 @@
 server:
   port: 9005 #端口
+spring:
+  application:
+    name: service-register #服务名称
 # 配置eureka server
 eureka:
-  instance:
-    hostname: localhost
   client:
-    register-with-eureka: false #是否将自己注册到注册中心，这里没有必要，所以false
-    fetch-registry: false #自己是否从注册中心获取注册信息，这里没有必要，所以false
-    service-url: #配置暴露给Eureka Client的请求地止
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    service-url: #将自己注册到9006对就的注册中心上
+      defaultZone: http://127.0.0.1:9006/eureka/
+  server:
+    enable-self-preservation: false #关闭自我保护
