@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * @author ：cn406c0
+ * @author ：TS六道轮回
  * @date ：Created in 2021/3/6 22:51
  * @description：${description}
  */
